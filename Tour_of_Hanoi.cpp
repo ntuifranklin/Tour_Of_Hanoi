@@ -11,7 +11,7 @@ void moveDiscs(int num, int fromPeg, int toPeg, int tempPeg) {
 	if ( num > 0) {
 
 		moveDiscs(num-1,fromPeg,tempPeg,toPeg);
-		//cout << "\nMoving a disc from peg "<<fromPeg << " to peg "<< toPeg;
+		cout << "\nMoving a disc from peg "<<fromPeg << " to peg "<< toPeg;
 		moveDiscs(num-1,tempPeg,toPeg,fromPeg);
 		
 	}
